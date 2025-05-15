@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap');
+
+/*color: #000000;* color negro
+color: #fae52a; color amarillo
+rgb(71, 71, 71); color gris
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1a1a; /* Fondo azul claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    color: #fae52a;
+    margin-bottom: 10px;
+}
+hr{
+    border: 2px solid #fae52a;
+}
+.form-container{
+    background-color: rgb(71, 71, 71);
+    height: 500px;
+    width: 1200px;
+    border-radius: 8px;
+    padding: 20px;
+}
+.title{
+    border: 2px solid black;
+    color: #fae52a;
+    min-height: 200px;
+}
+
+.form-content{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-content label{
+    margin-bottom: 5px;
+    color: #fae52a;
+}
+.costo-noche {
+    font-size: 0.8em;
+    color: #000000;
+    margin-left: 5px;
+}
+
+.form-content input{
+    border: 2px solid #fae52a;
+}
+.form-container select{
+   border: 2px solid #fae52a;
+
+}
+.info-adicional{
+    color: #fae52a;
+    margin-bottom: 20px;
+}
+.info-adicional textarea{
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 2px solid #fae52a;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+    min-height: 80px;
+}
+.for-acciones{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.cancelar-boton{
+    background-color: #c82333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.create-boton{
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}

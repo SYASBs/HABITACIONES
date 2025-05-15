@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>NUEVA HABITACION - MODO CLARO</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="titulo">
+            <h1>NUEVA HABITACION</h1>
+            <hr>
+        </div>
+        <form method="post" class="formulario" id="formulario">
+            <div class="formulario__grupos" id="formularios" name="formularios">
+                <div class="formulario__grupo" id="habitacion" name="habitacion">
+                    <label for="numero_habitacion">Número de la habitación</label>
+                    <input type="numero" id="numero_habitacion" name="numero_habitacion">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">Se debe completar el campo correctamente para continuar.Digitos de (1-1000)</p>
+                </div>
+                <div class="formulario__grupo" id="costo"name="costo">
+                    <label for="costo_reserva">Costo de reserva <span class="costo-noche">( costo por noche )</span></label>
+                    <input type="numero" id="costo_reserva" name="costo_reserva">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">La suma debe estar entre 50.000 y 5'000.000 para continuar</p>
+                </div>
+            </div>
+            <div class="formulario__grupos" id="formularios2" name="formularios">
+                <div class="formulario__grupo" id="tipo" name="tipo">
+                    <label for="tipo__habitacion">Tipo</label>
+                    <select id="tipo__habitacion" name="tipo__habitacion" >
+                        <option value="">Seleccionar</option>
+                        <option value="simple">Simple</option>
+                        <option value="doble">Doble</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                    <p class="formulario__input-error">Seleccione una opcion para continuar</p>
+                    
+                </div>
+                <div class="formulario__grupo" id="tamaño" name="tamaño">
+                    <label for="tamano__habitacion">Tamaño</label>
+                    <select id="tamano__habitacion" name="tamano__habitacion" >
+                        <option value="">Seleccionar</option>
+                        <option value="pequeno">Pequeño</option>
+                        <option value="mediano">Mediano</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                    <p class="formulario__input-error">Seleccione una opcion para continuar</p>
+                    
+                </div>
+                <div class="formulario__grupo" id="capacidad" name="capacidad">
+                    <label for="capacidad_habitacion">Capacidad</label>
+                    <input type="numero" id="capacidad_habitacion" name="capacidad_habitacion">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">La capacidad debe ser de 1 a 4 personas para continuar</p>
+                </div>
+            </div>
+            <div class="info-adicional" id="informacion" name="informacion">
+                <label>Información adicional</label>
+                <textarea class="descripcion_habitacion" name="descripcion_habitacion"></textarea>
+            </div>
+            <!--<div class="form-group photo-upload-area">
+                <label for="foto_perfil" class="photo-upload-label">
+                    <input type="file" id="foto_perfil" name="foto_perfil" accept="image/*"
+                        class="photo-input-hidden">
+                </label>
+            </div>-->
+            <br>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p>
+                    <i class="fa-solid fa-triangle-exclamation"><b>Error:</b> Por favor rellene todos los campos</i>
+                    
+                </p>
+            </div>
+            <br>
+            <div class="formulario__acciones">
+                <button class="cancelar-boton" id="cancelar-boton">Cancelar</button>
+                <button class="create-boton" id="create-boton">Crear</button>
+            </div>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito" name="formulario__mensaje-exito">Formulario se envio exitosamente</p>
+            
+        </form>
+    </div>
+
+    
+    <script src="validacionjs/app.js"></script>
+    <script src="https://kit.fontawesome.com/74dcf89f70.js" crossorigin="anonymous"></script>
+</body>
+</html>

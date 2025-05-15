@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/MODO OSCURO/oscuro.css">
+    <title>Nueva habitación</title>
+</head>
+<body>
+    
+    <div class="form-container">
+        <div class="titulo">
+            <h1>NUEVA HABITACION</h1>
+            <hr>
+        </div>
+        <div class="form-content">
+            <div class="form-group">
+                <label for="numero_habitacion">Número de la habitación</label>
+                <input type="text" id="numero_habitacion">
+            </div>
+            <div class="form-group">
+                <label for="costo_reserva">Costo de reserva <span class="costo-noche">( costo por noche )</span></label>
+                <input type="text" id="costo_reserva">
+            </div>
+        </div>
+        <div class="form-content">
+            <div class="form-group select-group">
+                <label for="tipo">Tipo</label>
+                <select id="tipo">
+                    <option value="">Seleccionar</option>
+                    <option value="simple">Simple</option>
+                    <option value="doble">Doble</option>
+                    <option value="suite">Suite</option>
+                </select>
+                
+            </div>
+            <div class="form-group select-group">
+                <label for="tamano">Tamaño</label>
+                <select id="tamano">
+                    <option value="">Seleccionar</option>
+                    <option value="pequeno">Pequeño</option>
+                    <option value="mediano">Mediano</option>
+                    <option value="grande">Grande</option>
+                </select>
+                
+            </div>
+            <div class="form-group">
+                <label for="capacidad">Capacidad</label>
+                <input type="text" id="capacidad">
+            </div>
+        </div>
+        <div class="info-adicional">
+            <label>Información adicional</label>
+            <textarea></textarea>
+        </div>
+        <div class="form-group photo-upload-area">
+            <label for="foto_perfil" class="photo-upload-label">
+                <input type="file" id="foto_perfil" name="foto_perfil" accept="image/*"
+                    class="photo-input-hidden">
+            </label>
+        </div>
+        <div class="for-acciones">
+            <button class="cancelar-boton">Cancelar</button>
+            <button class="create-boton">Crear</button>
+        </div>
+    </div>
+</body>
+</html>
