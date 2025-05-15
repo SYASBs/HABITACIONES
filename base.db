@@ -1,4 +1,7 @@
 -- Tabla para tipos de habitación (ej: Estándar, Suite, Familiar)
+create database HABITACIONES;
+use HABITACIONES;
+
 CREATE TABLE tipos_habitacion (
     tipo_id INT AUTO_INCREMENT PRIMARY KEY,
     nombre_tipo VARCHAR(50) UNIQUE NOT NULL
